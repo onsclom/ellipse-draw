@@ -1,0 +1,33 @@
+:root {
+    --backgroundColor: rgba(200, 210, 210);
+    --squareSize: 2em;
+}
+
+html, body, main {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+    background-color: #eee;
+    background-image: linear-gradient(45deg, var(--backgroundColor) 25%, transparent 25%, transparent 75%, var(--backgroundColor) 75%, var(--backgroundColor)),
+    linear-gradient(45deg, var(--backgroundColor) 25%, transparent 25%, transparent 75%, var(--backgroundColor) 75%, var(--backgroundColor));
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+}
+
+
+main {
+    display: flex;
+}
+
+
+canvas {
+    display: block;
+    margin: auto;
+    padding: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
